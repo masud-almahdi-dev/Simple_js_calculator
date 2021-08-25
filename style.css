@@ -1,0 +1,46 @@
+#display{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    font-size: large;
+    margin: 1rem;
+    padding: 1rem;
+    min-height: 10vh;
+    max-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+.sed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;    
+}
+button{
+    margin: 0.2vw;
+    font-size: large;
+    width: 20vw;
+    height: 20vw;
+}
+@media (orientation: landscape) {
+    #display {
+        max-width: 50vw;
+    }
+    button{
+        margin: 0.2vw;
+        font-size: large;
+        width: 5vw;
+        height: 5vw;
+    }
+}
+button:hover{
+    filter: invert(1);
+}
+#SPACE{
+    padding: 2vw 15vw;
+}
+#SHIFT{
+    padding: 1vw 1.7vw;
+}
